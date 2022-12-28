@@ -1,0 +1,1 @@
+practice with making user schemas and tables in mySQL workbench
