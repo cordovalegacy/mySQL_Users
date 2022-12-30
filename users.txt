@@ -1,0 +1,45 @@
+SELECT * FROM users;
+//SELECTING ALL FROM USERS
+
+
+INSERT INTO users (id, first_name, last_name, email, created_at, updated_at)
+VALUES(1, "Brendan", "Cordova", "cordovalegacy19@gmail.com", NOW(), NOW()),(2, "Tori", "Cordova", "t.mccullar@hotmail.com", NOW(), NOW()),(3, "Charlesworth", "Nubby-Bubby", "chungus10@dog.com", NOW(), NOW());
+//INSERTING THREE NEW USERS
+
+
+SELECT * FROM users;
+
+
+SELECT email FROM users;
+WHERE email = 'cordovalegacy19@gmail.com';
+//SELECTING EMAIL FROM USERS BY A SPECIFIC EMAIL ADDRESS
+
+
+SELECT * FROM users
+WHERE id = 3;
+//SELECTING ALL DATA, BY USER WITH ID = 3
+
+
+SELECT * FROM users;
+UPDATE users SET 
+last_name ='Pancakes'
+WHERE id = 3;
+//CHANGING DATA IN USER WITH ID = 3
+
+
+SELECT * FROM users;
+DELETE FROM users 
+WHERE id = 1;
+//DELETED USER 1
+
+
+SELECT * FROM users
+ORDER BY first_name
+//GOT USERS BY ALPHABETICAL FIRST_NAME
+
+
+SELECT * FROM users
+ORDER BY last_name DESC
+//GOT USERS BY REVERSE ALPHABETICAL LAST_NAME
+
+
